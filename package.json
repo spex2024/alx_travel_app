@@ -1,0 +1,25 @@
+{
+  "name": "hono-bun-mongoose-app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun run --watch index.ts",
+    "seed": "bun run src/seed.ts",
+    "clean": "rm -rf node_modules .bun",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "hono": "^4.8.12",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0"
+  }
+}
