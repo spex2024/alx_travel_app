@@ -1,0 +1,30 @@
+{
+  "name": "hono-bun-app",
+  "version": "1.0.0",
+  "description": "A modern API built with Hono, Bun, Mongoose, and MongoDB",
+  "main": "index.ts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch index.ts",
+    "build": "bun build index.ts --outdir ./dist",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": ["hono", "bun", "mongoose", "mongodb", "api", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.11.97",
+    "hono": "^4.8.12",
+    "mongoose": "^8.17.0"
+  }
+}
